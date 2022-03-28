@@ -1,0 +1,121 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-03-28T19:45:06.649Z",
+  "__export_source": "insomnia.desktop.app:v2022.2.1",
+  "resources": [
+    {
+      "_id": "req_844c9c366a134bca82425b1f33b84168",
+      "parentId": "wrk_7d3e9833faef464592eca92a0bc52d75",
+      "modified": 1648496672086,
+      "created": 1648089095970,
+      "url": "http://localhost:8000/api/v1/products/",
+      "name": "task-express-mongo",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_872859b05a1848738819d5d90ec8c67d",
+            "name": "name",
+            "value": "Laptop Asus",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "id": "pair_6a1a599f8a624abb95f780794053cced",
+            "name": "price",
+            "value": "20000000",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "id": "pair_95d5498a77464cf19a799764589a29cb",
+            "name": "stock",
+            "value": "20",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "id": "pair_32348d0517ab47f8abc533f906c56b00",
+            "name": "status",
+            "value": "true",
+            "description": "",
+            "type": "text",
+            "multiline": false,
+            "disabled": false
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "multipart/form-data",
+          "id": "pair_64b6023142394737bccc999527b0f701"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1648089095970,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_7d3e9833faef464592eca92a0bc52d75",
+      "parentId": null,
+      "modified": 1647103449727,
+      "created": 1647103449727,
+      "name": "New Document",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_a0f0548672c09fa4de71303eac5467eded168761",
+      "parentId": "wrk_7d3e9833faef464592eca92a0bc52d75",
+      "modified": 1647103449759,
+      "created": 1647103449759,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1647103449759,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_a0f0548672c09fa4de71303eac5467eded168761",
+      "parentId": "wrk_7d3e9833faef464592eca92a0bc52d75",
+      "modified": 1647103449768,
+      "created": 1647103449768,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_47aad5c828e54f148a812aedca69818f",
+      "parentId": "wrk_7d3e9833faef464592eca92a0bc52d75",
+      "modified": 1648483004727,
+      "created": 1647103449749,
+      "fileName": "New Document",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "uts_49d4f2c229c84669b18b2c2e9c040e1b",
+      "parentId": "wrk_7d3e9833faef464592eca92a0bc52d75",
+      "modified": 1647103449779,
+      "created": 1647103449779,
+      "name": "Example Test Suite",
+      "_type": "unit_test_suite"
+    }
+  ]
+}
