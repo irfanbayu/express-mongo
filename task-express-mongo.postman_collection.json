@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "d27cdd8b-3b1f-4c16-b1a9-3412db619753",
+		"name": "task-express-mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/v2/products/",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"624a0e4c03f38972e9125fb2\",\r\n    \"name\":\"Laptop Macbook\",\r\n    \"price\":\"35000000\",\r\n    \"stock\":\"3\",\r\n    \"status\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v2/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v2",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
