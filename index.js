@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 
-const { dbConnectionV1 } = require("./configDB");
+const { dbConnectionV1, dbConnectionV2 } = require("./configDB");
 const PORT = 8000;
 
 const routes = require("./app/routes");
@@ -19,6 +19,7 @@ app.use("/api", routes);
 app.listen(PORT, async () => {
   try {
     await dbConnectionV1();
+    await dbConnectionV2();
     console.log(`http://localhost:${PORT}`);
   } catch (error) {
     console.log(error.message);

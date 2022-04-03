@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 const { MongoClient } = require("mongodb");
 
 const url = "mongodb://localhost:27017";
@@ -18,4 +19,13 @@ const dbConnectionV1 = async () => {
 
 const db = client.db(dbName);
 
-module.exports = { dbConnectionV1, db };
+const dbConnectionV2 = async () => {
+  try {
+    await mongoose.connect(`${url}/${dbName}`);
+    console.log("connected to Database V2");
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+module.exports = { dbConnectionV1, dbConnectionV2, db };
